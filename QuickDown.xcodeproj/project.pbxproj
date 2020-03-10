@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FACADE1D241804F0004DC172 /* QuickDown.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = FACADE1C241804F0004DC172 /* QuickDown.entitlements */; };
+		FACADE1F241804F0004DC172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACADE1E241804F0004DC172 /* AppDelegate.swift */; };
+		FACADE22241804F0004DC172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACADE20241804F0004DC172 /* Main.storyboard */; };
+		FACADE24241804F0004DC172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACADE23241804F0004DC172 /* ViewController.swift */; };
+		FACADE26241804F1004DC172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACADE25241804F1004DC172 /* Assets.xcassets */; };
+		FACADE2D241804F1004DC172 /* QuickDown Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FACADE2C241804F1004DC172 /* QuickDown Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FACADE32241804F1004DC172 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACADE31241804F1004DC172 /* Cocoa.framework */; };
+		FACADE35241804F1004DC172 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACADE34241804F1004DC172 /* SafariExtensionHandler.swift */; };
+		FACADE37241804F1004DC172 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACADE36241804F1004DC172 /* SafariExtensionViewController.swift */; };
+		FACADE3A241804F1004DC172 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACADE38241804F1004DC172 /* SafariExtensionViewController.xib */; };
+		FACADE3D241804F1004DC172 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = FACADE3C241804F1004DC172 /* script.js */; };
+		FACADE3F241804F1004DC172 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FACADE3E241804F1004DC172 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FACADE2E241804F1004DC172 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACADE11241804F0004DC172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACADE2B241804F1004DC172;
+			remoteInfo = "QuickDown Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FACADE46241804F1004DC172 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FACADE2D241804F1004DC172 /* QuickDown Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FACADE19241804F0004DC172 /* QuickDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACADE1C241804F0004DC172 /* QuickDown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickDown.entitlements; sourceTree = "<group>"; };
+		FACADE1E241804F0004DC172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FACADE21241804F0004DC172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FACADE23241804F0004DC172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FACADE25241804F1004DC172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACADE27241804F1004DC172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACADE2C241804F1004DC172 /* QuickDown Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QuickDown Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACADE31241804F1004DC172 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FACADE34241804F1004DC172 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		FACADE36241804F1004DC172 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		FACADE39241804F1004DC172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		FACADE3B241804F1004DC172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACADE3C241804F1004DC172 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		FACADE3E241804F1004DC172 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		FACADE40241804F1004DC172 /* QuickDown_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickDown_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FACADE16241804F0004DC172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACADE29241804F1004DC172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACADE32241804F1004DC172 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FACADE10241804F0004DC172 = {
+			isa = PBXGroup;
+			children = (
+				FACADE1B241804F0004DC172 /* QuickDown */,
+				FACADE33241804F1004DC172 /* QuickDown Extension */,
+				FACADE30241804F1004DC172 /* Frameworks */,
+				FACADE1A241804F0004DC172 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FACADE1A241804F0004DC172 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FACADE19241804F0004DC172 /* QuickDown.app */,
+				FACADE2C241804F1004DC172 /* QuickDown Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACADE1B241804F0004DC172 /* QuickDown */ = {
+			isa = PBXGroup;
+			children = (
+				FACADE1C241804F0004DC172 /* QuickDown.entitlements */,
+				FACADE1E241804F0004DC172 /* AppDelegate.swift */,
+				FACADE20241804F0004DC172 /* Main.storyboard */,
+				FACADE23241804F0004DC172 /* ViewController.swift */,
+				FACADE25241804F1004DC172 /* Assets.xcassets */,
+				FACADE27241804F1004DC172 /* Info.plist */,
+			);
+			path = QuickDown;
+			sourceTree = "<group>";
+		};
+		FACADE30241804F1004DC172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FACADE31241804F1004DC172 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FACADE33241804F1004DC172 /* QuickDown Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FACADE34241804F1004DC172 /* SafariExtensionHandler.swift */,
+				FACADE36241804F1004DC172 /* SafariExtensionViewController.swift */,
+				FACADE38241804F1004DC172 /* SafariExtensionViewController.xib */,
+				FACADE3B241804F1004DC172 /* Info.plist */,
+				FACADE3C241804F1004DC172 /* script.js */,
+				FACADE3E241804F1004DC172 /* ToolbarItemIcon.pdf */,
+				FACADE40241804F1004DC172 /* QuickDown_Extension.entitlements */,
+			);
+			path = "QuickDown Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FACADE18241804F0004DC172 /* QuickDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACADE47241804F1004DC172 /* Build configuration list for PBXNativeTarget "QuickDown" */;
+			buildPhases = (
+				FACADE15241804F0004DC172 /* Sources */,
+				FACADE16241804F0004DC172 /* Frameworks */,
+				FACADE17241804F0004DC172 /* Resources */,
+				FACADE46241804F1004DC172 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACADE2F241804F1004DC172 /* PBXTargetDependency */,
+			);
+			name = QuickDown;
+			productName = QuickDown;
+			productReference = FACADE19241804F0004DC172 /* QuickDown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FACADE2B241804F1004DC172 /* QuickDown Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACADE43241804F1004DC172 /* Build configuration list for PBXNativeTarget "QuickDown Extension" */;
+			buildPhases = (
+				FACADE28241804F1004DC172 /* Sources */,
+				FACADE29241804F1004DC172 /* Frameworks */,
+				FACADE2A241804F1004DC172 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuickDown Extension";
+			productName = "QuickDown Extension";
+			productReference = FACADE2C241804F1004DC172 /* QuickDown Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FACADE11241804F0004DC172 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Alex Perathoner";
+				TargetAttributes = {
+					FACADE18241804F0004DC172 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FACADE2B241804F1004DC172 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FACADE14241804F0004DC172 /* Build configuration list for PBXProject "QuickDown" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FACADE10241804F0004DC172;
+			productRefGroup = FACADE1A241804F0004DC172 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FACADE18241804F0004DC172 /* QuickDown */,
+				FACADE2B241804F1004DC172 /* QuickDown Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FACADE17241804F0004DC172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACADE1D241804F0004DC172 /* QuickDown.entitlements in Resources */,
+				FACADE26241804F1004DC172 /* Assets.xcassets in Resources */,
+				FACADE22241804F0004DC172 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACADE2A241804F1004DC172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACADE3F241804F1004DC172 /* ToolbarItemIcon.pdf in Resources */,
+				FACADE3A241804F1004DC172 /* SafariExtensionViewController.xib in Resources */,
+				FACADE3D241804F1004DC172 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FACADE15241804F0004DC172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACADE24241804F0004DC172 /* ViewController.swift in Sources */,
+				FACADE1F241804F0004DC172 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACADE28241804F1004DC172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACADE37241804F1004DC172 /* SafariExtensionViewController.swift in Sources */,
+				FACADE35241804F1004DC172 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FACADE2F241804F1004DC172 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACADE2B241804F1004DC172 /* QuickDown Extension */;
+			targetProxy = FACADE2E241804F1004DC172 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FACADE20241804F0004DC172 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACADE21241804F0004DC172 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FACADE38241804F1004DC172 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACADE39241804F1004DC172 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FACADE41241804F1004DC172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FACADE42241804F1004DC172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FACADE44241804F1004DC172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "QuickDown Extension/QuickDown_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "QuickDown Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexP.QuickDown-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FACADE45241804F1004DC172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "QuickDown Extension/QuickDown_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XX9N244QQT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "QuickDown Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexP.QuickDown-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FACADE48241804F1004DC172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickDown/QuickDown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XX9N244QQT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = QuickDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlexP.QuickDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FACADE49241804F1004DC172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickDown/QuickDown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XX9N244QQT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = QuickDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlexP.QuickDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FACADE14241804F0004DC172 /* Build configuration list for PBXProject "QuickDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACADE41241804F1004DC172 /* Debug */,
+				FACADE42241804F1004DC172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACADE43241804F1004DC172 /* Build configuration list for PBXNativeTarget "QuickDown Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACADE44241804F1004DC172 /* Debug */,
+				FACADE45241804F1004DC172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACADE47241804F1004DC172 /* Build configuration list for PBXNativeTarget "QuickDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACADE48241804F1004DC172 /* Debug */,
+				FACADE49241804F1004DC172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FACADE11241804F0004DC172 /* Project object */;
+}
