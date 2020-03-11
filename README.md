@@ -19,7 +19,7 @@ With *QuickDown* you can execute a cURL command on the current webpage in just t
 ## Installation
 Download the [latest release](https://github.com/AlexPerathoner/QuickDown/releases/latest). Copy the QuickDown.app into your Application's folder. Open it.
 
-![Welcome Window](https://raw.githubusercontent.com/AlexPerathoner/QuickDown/master/Screens/welcomeScreen.png)
+<img margin="10px" src="https://raw.githubusercontent.com/AlexPerathoner/QuickDown/master/Screens/welcomeScreen.png" width="55%"></img>
 
 Click on "Open in Safari Extensions Preferences..." end enable QuickDown. A little download icon will appear in your bar on the top of the window.
 
