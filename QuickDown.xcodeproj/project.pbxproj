@@ -18,7 +18,7 @@
 		FACADE37241804F1004DC172 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACADE36241804F1004DC172 /* SafariExtensionViewController.swift */; };
 		FACADE3A241804F1004DC172 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACADE38241804F1004DC172 /* SafariExtensionViewController.xib */; };
 		FACADE3D241804F1004DC172 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = FACADE3C241804F1004DC172 /* script.js */; };
-		FACADE3F241804F1004DC172 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FACADE3E241804F1004DC172 /* ToolbarItemIcon.pdf */; };
+		FACADE4B24180827004DC172 /* icon-download.png in Resources */ = {isa = PBXBuildFile; fileRef = FACADE4A24180827004DC172 /* icon-download.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 		FACADE39241804F1004DC172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		FACADE3B241804F1004DC172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FACADE3C241804F1004DC172 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		FACADE3E241804F1004DC172 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		FACADE40241804F1004DC172 /* QuickDown_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickDown_Extension.entitlements; sourceTree = "<group>"; };
+		FACADE4A24180827004DC172 /* icon-download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-download.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 				FACADE38241804F1004DC172 /* SafariExtensionViewController.xib */,
 				FACADE3B241804F1004DC172 /* Info.plist */,
 				FACADE3C241804F1004DC172 /* script.js */,
-				FACADE3E241804F1004DC172 /* ToolbarItemIcon.pdf */,
+				FACADE4A24180827004DC172 /* icon-download.png */,
 				FACADE40241804F1004DC172 /* QuickDown_Extension.entitlements */,
 			);
 			path = "QuickDown Extension";
@@ -228,9 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACADE3F241804F1004DC172 /* ToolbarItemIcon.pdf in Resources */,
 				FACADE3A241804F1004DC172 /* SafariExtensionViewController.xib in Resources */,
 				FACADE3D241804F1004DC172 /* script.js in Resources */,
+				FACADE4B24180827004DC172 /* icon-download.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,9 +402,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "QuickDown Extension/QuickDown_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XX9N244QQT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "QuickDown Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,9 +423,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "QuickDown Extension/QuickDown_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XX9N244QQT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "QuickDown Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,10 +446,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = QuickDown/QuickDown.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XX9N244QQT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = QuickDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,10 +468,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = QuickDown/QuickDown.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XX9N244QQT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = QuickDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

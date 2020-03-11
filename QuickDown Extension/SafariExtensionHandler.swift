@@ -9,7 +9,7 @@
 import SafariServices
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
-    
+    let defaultPath = "/Users/alex/Downloads"
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
         // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
         page.getPropertiesWithCompletionHandler { properties in
@@ -18,8 +18,8 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
     
     override func toolbarItemClicked(in window: SFSafariWindow) {
-        // This method will be called when your toolbar item is clicked.
-        NSLog("The extension's toolbar item was clicked")
+		
+		
     }
     
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {
@@ -31,4 +31,21 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         return SafariExtensionViewController.shared
     }
 
+}
+
+@discardableResult
+func shell(launchPath: String, arguments: [String]) -> NSString? {
+
+    let task = Process()
+    task.launchPath = launchPath
+    task.arguments = arguments
+	
+    let pipe = Pipe()
+    task.standardOutput = pipe
+    task.launch()
+
+    let data = pipe.fileHandleForReading.readDataToEndOfFile()
+    let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
+
+    return output
 }
