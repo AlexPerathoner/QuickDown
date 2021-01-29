@@ -36,8 +36,3 @@ By default QuickDown will open every file as soon as its download has finished.
 ## License
 
 This project is licensed under the GPL-3.0 License - see the [LICENSE.md](LICENSE.md) file for details
-
----
-Donations are welcome!
-
-[![Donate-Paypal](https://img.shields.io/badge/donate-paypal-yellow.svg?style=flat)](https://paypal.me/AlexanderPerathoner)
